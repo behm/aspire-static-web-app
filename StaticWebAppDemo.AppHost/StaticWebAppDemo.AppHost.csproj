@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <IsAspireHost>true</IsAspireHost>
+    <UserSecretsId>d385a404-cd41-4e3a-830e-43a6f616e682</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\StaticWebAppDemo.ApiService\StaticWebAppDemo.ApiService.csproj" />
+    <ProjectReference Include="..\StaticWebAppDemo.Web\StaticWebAppDemo.Web.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Aspire.Hosting.AppHost" Version="8.2.2" />
+    <PackageReference Include="Aspire.Hosting.NodeJs" Version="9.0.0" />
+    <PackageReference Include="CommunityToolkit.Aspire.Hosting.Azure.StaticWebApps" Version="9.1.0" />
+  </ItemGroup>
+
+</Project>
