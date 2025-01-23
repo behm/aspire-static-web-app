@@ -8,3 +8,5 @@
     - https://github.com/CommunityToolkit/Aspire
 - https://learn.microsoft.com/en-us/azure/static-web-apps/local-development
     - Install static-web-apps-cli `npm install -D @azure/static-web-apps-cli`
+- Azure Static Web App API Access
+    - https://learn.microsoft.com/en-us/azure/static-web-apps/apis-app-service

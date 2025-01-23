@@ -7,8 +7,8 @@ builder.AddProject<Projects.StaticWebAppDemo_Web>("webfrontend")
     .WithReference(apiService);
 
 var web = builder.AddNpmApp("web", Path.Combine("..", "front-end"), "dev")
-        // .WithReference(apiService)
-        // .WaitFor(apiService)
+        .WithReference(apiService)
+        .WaitFor(apiService)
         .WithHttpEndpoint(env: "PORT")
         .WithExternalHttpEndpoints()
         .PublishAsDockerFile();
